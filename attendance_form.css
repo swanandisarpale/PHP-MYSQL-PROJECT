@@ -1,0 +1,541 @@
+
+
+/* =========================================================
+   EMPLOYEE ATTENDANCE FORM
+   MODERN PROFESSIONAL DESIGN
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef5ff 0%,
+            #f8fbff 50%,
+            #e8f1fc 100%
+        );
+
+    min-height: 100vh;
+
+    padding: 35px 30px;
+
+    color: #172033;
+}
+
+
+/* =========================================================
+   MAIN PAGE CARD
+========================================================= */
+
+body > h2,
+body > form,
+body > a {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   PAGE TITLE
+========================================================= */
+
+h2 {
+    background: linear-gradient(
+        135deg,
+        #071d3a,
+        #123f73
+    );
+
+    color: white;
+
+    padding: 30px 35px;
+
+    margin-bottom: 0;
+
+    border-radius: 18px 18px 0 0;
+
+    font-size: 30px;
+
+    font-weight: 750;
+
+    letter-spacing: -0.5px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(15, 38, 71, 0.15);
+}
+
+
+/* =========================================================
+   FORM CONTAINER
+========================================================= */
+
+form {
+    max-width: 1200px;
+
+    background: white;
+
+    padding: 42px 50px 45px;
+
+    border-radius: 0 0 18px 18px;
+
+    box-shadow:
+        0 18px 45px rgba(15, 38, 71, 0.12);
+
+    border:
+        1px solid #dce6f2;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 35px;
+
+    row-gap: 5px;
+}
+
+
+/* =========================================================
+   LABELS
+========================================================= */
+
+form label {
+    display: block;
+
+    color: #263b56;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 9px;
+
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   INPUTS & SELECT
+========================================================= */
+
+form input[type="text"],
+form input[type="date"],
+form input[type="time"],
+form select {
+
+    width: 100%;
+
+    height: 52px;
+
+    padding: 0 16px;
+
+    border:
+        1px solid #cbd8e7;
+
+    border-radius: 10px;
+
+    background: #fbfdff;
+
+    color: #172033;
+
+    font-size: 14px;
+
+    font-family: inherit;
+
+    outline: none;
+
+    transition:
+        all 0.25s ease;
+
+}
+
+
+/* =========================================================
+   INPUT HOVER
+========================================================= */
+
+form input[type="text"]:hover,
+form input[type="date"]:hover,
+form input[type="time"]:hover,
+form select:hover {
+
+    border-color: #7898bb;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   INPUT FOCUS
+========================================================= */
+
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form input[type="time"]:focus,
+form select:focus {
+
+    border-color: #123f73;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 4px rgba(18, 63, 115, 0.10);
+
+    transform:
+        translateY(-1px);
+}
+
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+form select {
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   SPACE / LINE BREAK FIX
+========================================================= */
+
+form br {
+    display: none;
+}
+
+
+/* =========================================================
+   ATTENDANCE SECTION
+========================================================= */
+
+/*
+   Attendance label + radio buttons
+   will take the full width.
+*/
+
+form label:nth-of-type(4) {
+    grid-column: 1 / -1;
+
+    margin-top: 25px;
+}
+
+
+/* =========================================================
+   RADIO BUTTONS
+========================================================= */
+
+form input[type="radio"] {
+
+    width: 18px;
+
+    height: 18px;
+
+    margin-left: 5px;
+
+    margin-right: 7px;
+
+    vertical-align: middle;
+
+    accent-color: #123f73;
+
+    cursor: pointer;
+}
+
+
+/* Radio text */
+
+form input[type="radio"] + * {
+    vertical-align: middle;
+}
+
+
+/* =========================================================
+   CHECK-IN / CHECK-OUT
+========================================================= */
+
+form label:nth-of-type(5),
+form label:nth-of-type(6) {
+
+    margin-top: 25px;
+}
+
+
+/* =========================================================
+   SUBMIT + RESET BUTTON AREA
+========================================================= */
+
+form input[type="submit"],
+form input[type="reset"] {
+
+    margin-top: 35px;
+
+    height: 52px;
+
+    padding: 0 35px;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        all 0.25s ease;
+}
+
+
+/* =========================================================
+   SAVE BUTTON
+========================================================= */
+
+form input[type="submit"] {
+
+    background:
+        linear-gradient(
+            135deg,
+            #071d3a,
+            #123f73
+        );
+
+    color: white;
+
+    border: none;
+
+    box-shadow:
+        0 8px 20px rgba(7, 29, 58, 0.22);
+}
+
+
+form input[type="submit"]:hover {
+
+    background:
+        linear-gradient(
+            135deg,
+            #123f73,
+            #1d5d96
+        );
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 12px 25px rgba(7, 29, 58, 0.28);
+}
+
+
+/* =========================================================
+   RESET BUTTON
+========================================================= */
+
+form input[type="reset"] {
+
+    background: white;
+
+    color: #123f73;
+
+    border:
+        1px solid #b9c9dc;
+
+    margin-left: 10px;
+}
+
+
+form input[type="reset"]:hover {
+
+    background: #edf4fc;
+
+    border-color: #123f73;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================================
+   VIEW ATTENDANCE LINK
+========================================================= */
+
+body > a {
+
+    display: block;
+
+    width: fit-content;
+
+    margin-top: 25px;
+
+    padding: 12px 20px;
+
+    background: white;
+
+    color: #123f73;
+
+    text-decoration: none;
+
+    border:
+        1px solid #c8d7e8;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 5px 15px rgba(15, 38, 71, 0.08);
+
+    transition:
+        all 0.25s ease;
+}
+
+
+body > a:hover {
+
+    background: #123f73;
+
+    color: white;
+
+    border-color: #123f73;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================================
+   PAGE ANIMATION
+========================================================= */
+
+h2,
+form,
+body > a {
+
+    animation:
+        fadeIn 0.5s ease;
+}
+
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    body {
+        padding: 20px 15px;
+    }
+
+    form {
+
+        padding:
+            35px 30px;
+
+        grid-template-columns: 1fr;
+
+        column-gap: 0;
+    }
+
+    form label:nth-of-type(4) {
+        grid-column: auto;
+    }
+
+    h2 {
+        font-size: 27px;
+
+        padding:
+            25px 20px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    h2 {
+
+        font-size: 23px;
+
+        padding:
+            22px 15px;
+
+        border-radius:
+            13px 13px 0 0;
+    }
+
+    form {
+
+        padding:
+            25px 18px 30px;
+
+        border-radius:
+            0 0 13px 13px;
+    }
+
+    form input[type="text"],
+    form input[type="date"],
+    form input[type="time"],
+    form select {
+
+        height: 48px;
+
+        font-size: 13px;
+    }
+
+    form input[type="submit"],
+    form input[type="reset"] {
+
+        width: 100%;
+
+        margin-left: 0;
+
+        margin-top: 12px;
+    }
+
+    body > a {
+
+        width: 100%;
+
+        text-align: center;
+
+        margin-top: 18px;
+    }
+}
