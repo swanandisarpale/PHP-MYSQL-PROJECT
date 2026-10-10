@@ -1,0 +1,704 @@
+
+/* =========================================================
+   EMPLOYEE SALARY MANAGEMENT
+   NAVY BLUE PROFESSIONAL THEME
+========================================================= */
+
+
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(18, 63, 115, 0.10),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #eef4fb,
+            #f7faff
+        );
+
+    color: #172033;
+
+    min-height: 100vh;
+
+    padding: 40px 20px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   MAIN PAGE WRAPPER
+========================= */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =========================
+   MAIN HEADING
+========================= */
+
+h2 {
+    width: 100%;
+    max-width: 1100px;
+
+    text-align: center;
+
+    color: #071d3a;
+
+    font-size: 32px;
+
+    font-weight: 750;
+
+    margin-bottom: 30px;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+h3 {
+    width: 100%;
+    max-width: 1100px;
+
+    margin-top: 30px;
+    margin-bottom: 18px;
+
+    padding: 14px 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #e8f1fb,
+            #f7faff
+        );
+
+    color: #092b54;
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    border-left: 5px solid #123f73;
+
+    border-radius: 9px;
+
+    box-shadow:
+        0 3px 10px rgba(18, 63, 115, 0.05);
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+body > p {
+    width: 100%;
+    max-width: 1100px;
+
+    padding: 14px 18px;
+
+    margin-bottom: 20px;
+
+    border-radius: 9px;
+
+    background: #edf8f2;
+
+    border: 1px solid #b9e3ca;
+
+    color: #187347;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   EMPLOYEE INFORMATION TABLE
+========================= */
+
+table {
+    width: 100%;
+
+    max-width: 1100px;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    background: #ffffff;
+
+    border: 1px solid #d9e3ee;
+
+    border-radius: 13px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(15, 38, 71, 0.08);
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   TABLE HEADER
+========================= */
+
+th {
+    padding: 14px 16px;
+
+    text-align: left;
+
+    background:
+        linear-gradient(
+            135deg,
+            #061a33,
+            #123f73
+        );
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   TABLE CELLS
+========================= */
+
+td {
+    padding: 14px 16px;
+
+    color: #4b5f75;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5ebf2;
+
+    font-size: 14px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+table tr:hover td {
+    background: #f1f7fd;
+}
+
+
+/* =========================
+   EMPLOYEE INFORMATION
+========================= */
+
+table:first-of-type th {
+    width: 220px;
+
+    color: #ffffff;
+}
+
+table:first-of-type td {
+    color: #123f73;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   SALARY FORM CONTAINER
+========================= */
+
+form {
+    width: 100%;
+    max-width: 1100px;
+
+    background: #ffffff;
+
+    padding: 32px;
+
+    border-radius: 15px;
+
+    border: 1px solid #d9e3f0;
+
+    box-shadow:
+        0 10px 30px rgba(15, 38, 71, 0.08);
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   FORM LABELS
+========================= */
+
+form label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #263b56;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+form input[type="date"],
+form input[type="number"],
+form textarea,
+form select {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    margin-bottom: 22px;
+
+    border: 1px solid #c8d5e5;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #172033;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    transition: all 0.25s ease;
+}
+
+
+/* =========================
+   PLACEHOLDER
+========================= */
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #96a5b7;
+}
+
+
+/* =========================
+   INPUT HOVER
+========================= */
+
+form input[type="date"]:hover,
+form input[type="number"]:hover,
+form textarea:hover,
+form select:hover {
+    border-color: #7392b5;
+}
+
+
+/* =========================
+   INPUT FOCUS
+========================= */
+
+form input[type="date"]:focus,
+form input[type="number"]:focus,
+form textarea:focus,
+form select:focus {
+
+    outline: none;
+
+    border-color: #123f73;
+
+    box-shadow:
+        0 0 0 4px rgba(18, 63, 115, 0.10);
+}
+
+
+/* =========================
+   TEXTAREA
+========================= */
+
+form textarea {
+    min-height: 110px;
+
+    resize: vertical;
+}
+
+
+/* =========================
+   MAIN BUTTON
+========================= */
+
+form button {
+    padding: 13px 30px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071d3a,
+            #123f73
+        );
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 18px rgba(7, 29, 58, 0.22);
+
+    transition: all 0.25s ease;
+}
+
+form button:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #123f73,
+            #1c5a91
+        );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(7, 29, 58, 0.28);
+}
+
+
+/* =========================
+   FORM CANCEL LINK
+========================= */
+
+form a {
+    display: inline-block;
+
+    margin-left: 12px;
+
+    padding: 11px 20px;
+
+    border-radius: 8px;
+
+    background: #f1f5f9;
+
+    border: 1px solid #d5dee8;
+
+    color: #475569;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+form a:hover {
+    background: #e2e8f0;
+
+    color: #172033;
+}
+
+
+/* =========================================================
+   SALARY LIST TABLE
+========================================================= */
+
+body > table:last-of-type {
+    margin-top: 5px;
+
+    overflow-x: auto;
+}
+
+
+/* =========================
+   SALARY AMOUNT
+========================= */
+
+body > table:last-of-type td:nth-child(4) {
+    color: #123f73;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   MONTH
+========================= */
+
+body > table:last-of-type td:nth-child(3) {
+    color: #526982;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   PAYMENT MODE
+========================= */
+
+body > table:last-of-type td:nth-child(6) {
+    font-weight: 700;
+
+    color: #175ea8;
+}
+
+
+/* =========================
+   ACTION LINKS
+========================= */
+
+body > table:last-of-type td:last-child {
+    min-width: 280px;
+
+    white-space: nowrap;
+}
+
+body > table:last-of-type td:last-child a {
+    display: inline-block;
+
+    padding: 7px 11px;
+
+    margin: 2px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    transition: all 0.2s ease;
+}
+
+
+/* UPDATE */
+
+body > table:last-of-type td:last-child a:nth-of-type(1) {
+    background: #edf5ff;
+
+    color: #175ea8;
+
+    border: 1px solid #c4daf2;
+}
+
+body > table:last-of-type td:last-child a:nth-of-type(1):hover {
+    background: #175ea8;
+
+    color: #ffffff;
+
+    transform: translateY(-1px);
+}
+
+
+/* DELETE */
+
+body > table:last-of-type td:last-child a:nth-of-type(2) {
+    background: #fff1f2;
+
+    color: #be123c;
+
+    border: 1px solid #fecdd3;
+}
+
+body > table:last-of-type td:last-child a:nth-of-type(2):hover {
+    background: #be123c;
+
+    color: #ffffff;
+
+    transform: translateY(-1px);
+}
+
+
+/* SALARY SLIP */
+
+body > table:last-of-type td:last-child a:nth-of-type(3) {
+    background: #edf8f2;
+
+    color: #187347;
+
+    border: 1px solid #b9e3ca;
+}
+
+body > table:last-of-type td:last-child a:nth-of-type(3):hover {
+    background: #187347;
+
+    color: #ffffff;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   BACK TO EMPLOYEE
+========================= */
+
+body > a:last-child {
+    display: inline-block;
+
+    width: 100%;
+    max-width: 1100px;
+
+    margin-top: 25px;
+
+    padding: 12px 18px;
+
+    border-radius: 9px;
+
+    background: #e8f1fb;
+
+    border: 1px solid #cbdced;
+
+    color: #123f73;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-align: center;
+
+    transition: all 0.25s ease;
+}
+
+body > a:last-child:hover {
+    background: #123f73;
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    body {
+        padding: 25px 12px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    form {
+        padding: 25px 20px;
+    }
+
+    table {
+        display: block;
+
+        overflow-x: auto;
+
+        white-space: nowrap;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 15px 8px;
+    }
+
+    h2 {
+        font-size: 23px;
+
+        margin-bottom: 22px;
+    }
+
+    h3 {
+        font-size: 17px;
+
+        padding: 12px 15px;
+    }
+
+    form {
+        padding: 22px 15px;
+    }
+
+    form button,
+    form a {
+        width: 100%;
+
+        margin: 5px 0;
+
+        text-align: center;
+    }
+
+}
+
+
+/* =========================
+   PAGE ANIMATION
+========================= */
+
+h2,
+h3,
+form,
+table {
+    animation: salaryFade 0.45s ease;
+}
+
+@keyframes salaryFade {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
