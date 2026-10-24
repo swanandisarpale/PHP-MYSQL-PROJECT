@@ -1,0 +1,1144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =================== NAVBAR =================== -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold fs-3" href="#">
+            <i class="bi bi-briefcase-fill"></i> Job Portal
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Jobs</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Companies</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+
+                <li class="nav-item ms-2">
+                    <a class="btn btn-light" href="#">
+                        Login
+                    </a>
+                </li>
+
+                <li class="nav-item ms-2">
+                    <a class="btn btn-warning" href="#">
+                        Register
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+<!-- =================== HERO SECTION =================== -->
+
+<section class="hero py-5 bg-light">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- Left -->
+
+            <div class="col-lg-6">
+
+                <h1 class="display-4 fw-bold">
+
+                    Find Your <span class="text-primary">
+                    Dream Job</span>
+
+                </h1>
+
+                <p class="lead mt-4">
+
+                    Discover thousands of jobs from top companies.
+                    Build your career with the right opportunity.
+
+                </p>
+
+                <!-- Search -->
+
+                <div class="card shadow p-4 mt-4">
+
+                    <div class="row">
+
+                        <div class="col-md-5 mb-3">
+
+                            <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Job Title">
+
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+
+                            <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Location">
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <button class="btn btn-primary w-100">
+
+                                Search
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="col-lg-6 text-center">
+
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=700"
+                     class="img-fluid rounded shadow"
+                     alt="Hero Image">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =================== POPULAR CATEGORIES =================== -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">Popular Categories</h2>
+
+            <p class="text-muted">
+                Explore jobs from different industries
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Web Development -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card shadow border-0 text-center p-4 h-100">
+                    <i class="bi bi-laptop display-4 text-primary"></i>
+                    <h5 class="mt-3">Web Development</h5>
+                    <p class="text-muted">250+ Jobs</p>
+                </div>
+            </div>
+
+            <!-- App Development -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card shadow border-0 text-center p-4 h-100">
+                    <i class="bi bi-phone display-4 text-success"></i>
+                    <h5 class="mt-3">App Development</h5>
+                    <p class="text-muted">180+ Jobs</p>
+                </div>
+            </div>
+
+            <!-- Data Analyst -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card shadow border-0 text-center p-4 h-100">
+                    <i class="bi bi-graph-up-arrow display-4 text-info"></i>
+                    <h5 class="mt-3">Data Analyst</h5>
+                    <p class="text-muted">150+ Jobs</p>
+                </div>
+            </div>
+
+            <!-- Data Scientist -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card shadow border-0 text-center p-4 h-100">
+                    <i class="bi bi-bar-chart-line display-4 text-danger"></i>
+                    <h5 class="mt-3">Data Scientist</h5>
+                    <p class="text-muted">120+ Jobs</p>
+                </div>
+            </div>
+
+            <!-- AI / ML -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card shadow border-0 text-center p-4 h-100">
+                    <i class="bi bi-cpu display-4 text-warning"></i>
+                    <h5 class="mt-3">AI / ML Engineer</h5>
+                    <p class="text-muted">90+ Jobs</p>
+                </div>
+            </div>
+
+            <!-- Cyber Security -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card shadow border-0 text-center p-4 h-100">
+                    <i class="bi bi-shield-lock display-4 text-primary"></i>
+                    <h5 class="mt-3">Cyber Security</h5>
+                    <p class="text-muted">75+ Jobs</p>
+                </div>
+            </div>
+
+            <!-- Cloud Computing -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card shadow border-0 text-center p-4 h-100">
+                    <i class="bi bi-cloud display-4 text-secondary"></i>
+                    <h5 class="mt-3">Cloud Computing</h5>
+                    <p class="text-muted">80+ Jobs</p>
+                </div>
+            </div>
+
+            <!-- DevOps -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card shadow border-0 text-center p-4 h-100">
+                    <i class="bi bi-gear-wide-connected display-4 text-success"></i>
+                    <h5 class="mt-3">DevOps Engineer</h5>
+                    <p class="text-muted">95+ Jobs</p>
+                </div>
+            </div>
+
+            <!-- UI/UX -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card shadow border-0 text-center p-4 h-100">
+                    <i class="bi bi-palette display-4 text-danger"></i>
+                    <h5 class="mt-3">UI / UX Design</h5>
+                    <p class="text-muted">140+ Jobs</p>
+                </div>
+            </div>
+
+            <!-- Software Engineer -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card shadow border-0 text-center p-4 h-100">
+                    <i class="bi bi-code-slash display-4 text-dark"></i>
+                    <h5 class="mt-3">Software Engineer</h5>
+                    <p class="text-muted">300+ Jobs</p>
+                </div>
+            </div>
+
+            <!-- Database Administrator -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card shadow border-0 text-center p-4 h-100">
+                    <i class="bi bi-database display-4 text-info"></i>
+                    <h5 class="mt-3">Database Admin</h5>
+                    <p class="text-muted">60+ Jobs</p>
+                </div>
+            </div>
+
+            <!-- Project Manager -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card shadow border-0 text-center p-4 h-100">
+                    <i class="bi bi-kanban display-4 text-warning"></i>
+                    <h5 class="mt-3">Project Manager</h5>
+                    <p class="text-muted">70+ Jobs</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =================== FEATURED JOBS =================== -->
+
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Featured Jobs</h2>
+            <p class="text-muted">
+                Explore the latest opportunities from top companies
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Job Card 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow-lg border-0 h-100">
+
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between align-items-center">
+
+                            <div>
+                                <h4>Frontend Developer</h4>
+                                <h6 class="text-primary">Google</h6>
+                            </div>
+
+                            <i class="bi bi-bookmark fs-4"></i>
+
+                        </div>
+
+                        <hr>
+
+                        <p>
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            Bengaluru
+                        </p>
+
+                        <p>
+                            <i class="bi bi-currency-rupee text-success"></i>
+                            ₹8 - ₹12 LPA
+                        </p>
+
+                        <p>
+                            <i class="bi bi-briefcase-fill text-primary"></i>
+                            0 - 2 Years
+                        </p>
+
+                        <span class="badge bg-success">
+                            Full Time
+                        </span>
+
+                        <div class="mt-4 d-grid">
+
+                            <a href="#" class="btn btn-primary">
+                                Apply Now
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Job Card 2 -->
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow-lg border-0 h-100">
+
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between">
+
+                            <div>
+                                <h4>Data Analyst</h4>
+                                <h6 class="text-primary">Microsoft</h6>
+                            </div>
+
+                            <i class="bi bi-bookmark"></i>
+
+                        </div>
+
+                        <hr>
+
+                        <p><i class="bi bi-geo-alt-fill text-danger"></i> Pune</p>
+
+                        <p>
+                            <i class="bi bi-currency-rupee text-success"></i>
+                            ₹6 - ₹10 LPA
+                        </p>
+
+                        <p>
+                            <i class="bi bi-briefcase-fill text-primary"></i>
+                            Fresher
+                        </p>
+
+                        <span class="badge bg-info">
+                            Hybrid
+                        </span>
+
+                        <div class="mt-4 d-grid">
+
+                            <a href="#" class="btn btn-primary">
+
+                                Apply Now
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Job Card 3 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card shadow-lg border-0 h-100">
+
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between">
+
+                            <div>
+
+                                <h4>Java Developer</h4>
+
+                                <h6 class="text-primary">
+                                    Amazon
+                                </h6>
+
+                            </div>
+
+                            <i class="bi bi-bookmark"></i>
+
+                        </div>
+
+                        <hr>
+
+                        <p>
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+
+                            Hyderabad
+
+                        </p>
+
+                        <p>
+
+                            <i class="bi bi-currency-rupee text-success"></i>
+
+                            ₹7 - ₹11 LPA
+
+                        </p>
+
+                        <p>
+
+                            <i class="bi bi-briefcase-fill text-primary"></i>
+
+                            1+ Years
+
+                        </p>
+
+                        <span class="badge bg-warning text-dark">
+
+                            Remote
+
+                        </span>
+
+                        <div class="mt-4 d-grid">
+
+                            <a href="#" class="btn btn-primary">
+
+                                Apply Now
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Job Card 4 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card shadow-lg border-0 h-100">
+
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between">
+
+                            <div>
+
+                                <h4>UI/UX Designer</h4>
+
+                                <h6 class="text-primary">
+
+                                    Adobe
+
+                                </h6>
+
+                            </div>
+
+                            <i class="bi bi-bookmark"></i>
+
+                        </div>
+
+                        <hr>
+
+                        <p><i class="bi bi-geo-alt-fill text-danger"></i> Mumbai</p>
+
+                        <p><i class="bi bi-currency-rupee text-success"></i> ₹5 - ₹8 LPA</p>
+
+                        <p><i class="bi bi-briefcase-fill text-primary"></i> Fresher</p>
+
+                        <span class="badge bg-secondary">Internship</span>
+
+                        <div class="mt-4 d-grid">
+
+                            <a href="#" class="btn btn-primary">
+
+                                Apply Now
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Job Card 5 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card shadow-lg border-0 h-100">
+
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between">
+
+                            <div>
+
+                                <h4>Cyber Security Analyst</h4>
+
+                                <h6 class="text-primary">
+
+                                    Infosys
+
+                                </h6>
+
+                            </div>
+
+                            <i class="bi bi-bookmark"></i>
+
+                        </div>
+
+                        <hr>
+
+                        <p><i class="bi bi-geo-alt-fill text-danger"></i> Chennai</p>
+
+                        <p><i class="bi bi-currency-rupee text-success"></i> ₹6 - ₹9 LPA</p>
+
+                        <p><i class="bi bi-briefcase-fill text-primary"></i> 1 Year</p>
+
+                        <span class="badge bg-success">Full Time</span>
+
+                        <div class="mt-4 d-grid">
+
+                            <a href="#" class="btn btn-primary">
+
+                                Apply Now
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Job Card 6 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card shadow-lg border-0 h-100">
+
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between">
+
+                            <div>
+
+                                <h4>AI / ML Engineer</h4>
+
+                                <h6 class="text-primary">
+
+                                    OpenAI
+
+                                </h6>
+
+                            </div>
+
+                            <i class="bi bi-bookmark"></i>
+
+                        </div>
+
+                        <hr>
+
+                        <p><i class="bi bi-geo-alt-fill text-danger"></i> Remote</p>
+
+                        <p><i class="bi bi-currency-rupee text-success"></i> ₹12 - ₹18 LPA</p>
+
+                        <p><i class="bi bi-briefcase-fill text-primary"></i> 2+ Years</p>
+
+                        <span class="badge bg-warning text-dark">Remote</span>
+
+                        <div class="mt-4 d-grid">
+
+                            <a href="#" class="btn btn-primary">
+
+                                Apply Now
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+
+            <a href="#" class="btn btn-outline-primary btn-lg">
+                View All Jobs
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =================== TOP COMPANIES =================== -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">Top Hiring Companies</h2>
+
+            <p class="text-muted">
+                Discover companies actively hiring talented professionals.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Google -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card border-0 shadow h-100 text-center p-4">
+
+                    <img src="https://logo.clearbit.com/google.com"
+                         class="mx-auto mb-3"
+                         width="70"
+                         height="70">
+
+                    <h5>Google</h5>
+
+                    <p class="text-muted">
+                        Software & AI
+                    </p>
+
+                    <div class="mb-3">
+
+                        ⭐⭐⭐⭐⭐
+
+                    </div>
+
+                    <span class="badge bg-success mb-3">
+                        120 Open Jobs
+                    </span>
+
+                    <a href="#" class="btn btn-outline-primary">
+                        View Company
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Microsoft -->
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card border-0 shadow h-100 text-center p-4">
+
+                    <img src="https://logo.clearbit.com/microsoft.com"
+                         class="mx-auto mb-3"
+                         width="70"
+                         height="70">
+
+                    <h5>Microsoft</h5>
+
+                    <p class="text-muted">
+                        Cloud & Software
+                    </p>
+
+                    <div class="mb-3">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <span class="badge bg-primary mb-3">
+                        95 Open Jobs
+                    </span>
+
+                    <a href="#" class="btn btn-outline-primary">
+                        View Company
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Amazon -->
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card border-0 shadow h-100 text-center p-4">
+
+                    <img src="https://logo.clearbit.com/amazon.com"
+                         class="mx-auto mb-3"
+                         width="70"
+                         height="70">
+
+                    <h5>Amazon</h5>
+
+                    <p class="text-muted">
+                        E-Commerce
+                    </p>
+
+                    <div class="mb-3">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <span class="badge bg-warning text-dark mb-3">
+                        110 Open Jobs
+                    </span>
+
+                    <a href="#" class="btn btn-outline-primary">
+                        View Company
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Infosys -->
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card border-0 shadow h-100 text-center p-4">
+
+                    <img src="https://logo.clearbit.com/infosys.com"
+                         class="mx-auto mb-3"
+                         width="70"
+                         height="70">
+
+                    <h5>Infosys</h5>
+
+                    <p class="text-muted">
+                        IT Services
+                    </p>
+
+                    <div class="mb-3">
+                        ⭐⭐⭐⭐☆
+                    </div>
+
+                    <span class="badge bg-info mb-3">
+                        80 Open Jobs
+                    </span>
+
+                    <a href="#" class="btn btn-outline-primary">
+                        View Company
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- TCS -->
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card border-0 shadow h-100 text-center p-4">
+
+                    <img src="https://logo.clearbit.com/tcs.com"
+                         class="mx-auto mb-3"
+                         width="70"
+                         height="70">
+
+                    <h5>TCS</h5>
+
+                    <p class="text-muted">
+                        IT Consulting
+                    </p>
+
+                    <div class="mb-3">
+                        ⭐⭐⭐⭐☆
+                    </div>
+
+                    <span class="badge bg-success mb-3">
+                        135 Open Jobs
+                    </span>
+
+                    <a href="#" class="btn btn-outline-primary">
+                        View Company
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Accenture -->
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card border-0 shadow h-100 text-center p-4">
+
+                    <img src="https://logo.clearbit.com/accenture.com"
+                         class="mx-auto mb-3"
+                         width="70"
+                         height="70">
+
+                    <h5>Accenture</h5>
+
+                    <p class="text-muted">
+                        Technology
+                    </p>
+
+                    <div class="mb-3">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <span class="badge bg-danger mb-3">
+                        90 Open Jobs
+                    </span>
+
+                    <a href="#" class="btn btn-outline-primary">
+                        View Company
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- IBM -->
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card border-0 shadow h-100 text-center p-4">
+
+                    <img src="https://logo.clearbit.com/ibm.com"
+                         class="mx-auto mb-3"
+                         width="70"
+                         height="70">
+
+                    <h5>IBM</h5>
+
+                    <p class="text-muted">
+                        AI & Cloud
+                    </p>
+
+                    <div class="mb-3">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <span class="badge bg-secondary mb-3">
+                        65 Open Jobs
+                    </span>
+
+                    <a href="#" class="btn btn-outline-primary">
+                        View Company
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Wipro -->
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card border-0 shadow h-100 text-center p-4">
+
+                    <img src="https://logo.clearbit.com/wipro.com"
+                         class="mx-auto mb-3"
+                         width="70"
+                         height="70">
+
+                    <h5>Wipro</h5>
+
+                    <p class="text-muted">
+                        IT Services
+                    </p>
+
+                    <div class="mb-3">
+                        ⭐⭐⭐⭐☆
+                    </div>
+
+                    <span class="badge bg-dark mb-3">
+                        72 Open Jobs
+                    </span>
+
+                    <a href="#" class="btn btn-outline-primary">
+                        View Company
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =================== LATEST JOBS =================== -->
+
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">Latest Job Openings</h2>
+
+            <p class="text-muted">
+                Find the newest job opportunities from leading companies.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Job 1 -->
+            <div class="col-lg-6">
+                <div class="card shadow border-0">
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h4>Frontend Developer</h4>
+                                <h6 class="text-primary">Google</h6>
+                            </div>
+
+                            <span class="badge bg-success">
+                                Full Time
+                            </span>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <p><i class="bi bi-geo-alt-fill text-danger"></i> Bengaluru</p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <p><i class="bi bi-currency-rupee text-success"></i> ₹8 - ₹12 LPA</p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <p><i class="bi bi-clock-fill text-primary"></i> Posted 2 Days Ago</p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <p><i class="bi bi-briefcase-fill text-warning"></i> 0-2 Years</p>
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="btn btn-primary mt-2">
+                            Apply Now
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="col-lg-6">
+                <div class="card shadow border-0">
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between">
+
+                            <div>
+                                <h4>Data Analyst</h4>
+                                <h6 class="text-primary">Microsoft</h6>
+                            </div>
+
+                            <span class="badge bg-info">
+                                Hybrid
+                            </span>
+
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <p><i class="bi bi-geo-alt-fill text-danger"></i> Pune</p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <p><i class="bi bi-currency-rupee text-success"></i> ₹6 - ₹10 LPA</p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <p><i class="bi bi-clock-fill text-primary"></i> Posted Today</p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <p><i class="bi bi-briefcase-fill text-warning"></i> Fresher</p>
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="btn btn-primary mt-2">
+                            Apply Now
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="col-lg-6">
+                <div class="card shadow border-0">
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between">
+
+                            <div>
+                                <h4>Java Developer</h4>
+                                <h6 class="text-primary">Amazon</h6>
+                            </div>
+
+                            <span class="badge bg-warning text-dark">
+                                Remote
+                            </span>
+
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <p><i class="bi bi-geo-alt-fill text-danger"></i> Hyderabad</p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <p><i class="bi bi-currency-rupee text-success"></i> ₹7 - ₹11 LPA</p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <p><i class="bi bi-clock-fill text-primary"></i> Posted Yesterday</p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <p><i class="bi bi-briefcase-fill text-warning"></i> 1+ Years</p>
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="btn btn-primary mt-2">
+                            Apply Now
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job 4 -->
+            <div class="col-lg-6">
+                <div class="card shadow border-0">
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between">
+
+                            <div>
+                                <h4>AI / ML Engineer</h4>
+                                <h6 class="text-primary">NVIDIA</h6>
+                            </div>
+
+                            <span class="badge bg-danger">
+                                Urgent
+                            </span>
+
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <p><i class="bi bi-geo-alt-fill text-danger"></i> Bengaluru</p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <p><i class="bi bi-currency-rupee text-success"></i> ₹12 - ₹18 LPA</p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <p><i class="bi bi-clock-fill text-primary"></i> Posted Today</p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <p><i class="bi bi-briefcase-fill text-warning"></i> 2+ Years</p>
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="btn btn-primary mt-2">
+                            Apply Now
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+
+            <a href="jobs.php" class="btn btn-outline-primary btn-lg">
+                Browse All Jobs
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
